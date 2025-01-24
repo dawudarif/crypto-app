@@ -1,0 +1,71 @@
+.container {
+  background-color: #0f0f0f;
+  width: 100%;
+  min-height: 100vh;
+  color: white;
+
+  section {
+    max-width: 80rem;
+
+    padding: 2.5rem 1rem;
+    margin: 0 auto;
+
+    @media (min-width: 768px) {
+      padding: 2.5rem;
+    }
+  }
+}
+
+.percentUp {
+  background-color: #1e4632;
+  color: #1dc727;
+}
+
+.percentDown {
+  background-color: #55203c;
+  color: #df0552;
+}
+
+.percentPill {
+  padding: 0.2rem 0.5rem;
+  border-radius: 1.5625rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.125rem;
+}
+
+.text {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  font-weight: 500;
+}
+
+.config {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+
+  input {
+    padding: 0.5rem 1rem;
+    border: 1px solid #5555;
+    outline: none;
+    color: white;
+    background-color: transparent;
+    border-radius: 0.5rem;
+
+    @media (max-width: 480px) {
+      width: 100%;
+    }
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    -moz-appearance: textfield;
+  }
+}
